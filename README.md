@@ -37,5 +37,4 @@ You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser
 
 Part of this project is based in the following docs:
 
-
-
+- [Spring Boot Messaging with RabbitMQ](https://springframework.guru/spring-boot-messaging-with-rabbitmq/)
