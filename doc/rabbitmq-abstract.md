@@ -66,4 +66,29 @@ using different parameters and bindings setups. Clients can create their own exc
 use the predefined default exchanges which are created when the server starts for the first 
 time.
 
-### 
+### Standard RabbitMQ message flow
+
+<div style="width:100%" >
+    <div style="width: 50%; float:left;">
+        <ol>
+            <li>
+                The producer publishes a message to the exchange.
+            </li>
+            <li>
+                The exchange receives the message and is now responsible for the routing of the message.
+            </li>
+            <li>
+                Binding must be set up between the queue and the exchange. In this case, we have bindings to two different queues from the exchange. The exchange routes the message into the queues.
+            </li>
+            <li>
+               The messages stay in the queue until they are handled by a consumer.
+            </li>
+            <li>
+               The consumer handles the message.
+            </li>
+        </ol>
+    </div>
+    <div style="width: 50%; float:left;">
+        <img src="img/exchanges-bidings-routing-keys.png" style="width: 100%; max-width: 460px;">
+    </div>
+</div>
