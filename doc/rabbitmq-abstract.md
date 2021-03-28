@@ -37,4 +37,33 @@ receiver receives.
 then processes them further.
 This image shows how messages are communicated in RabbitMQ.
   
-![](doc/Messaging-System-1024x439.png =600x300)
+<img src="https://github.com/zherro/spring-with-rabbitmq/blob/main/doc/img/Messaging-System-1024x439.png" width="600" height="300">
+
+## RabbitMQ Exchanges, routing keys and bindings
+
+> What is an exchange? What are routing keys and bindings? 
+> How are exchanges and queues associated with each other? 
+> When should I use them and how?
+
+Messages are not published directly to a queue. Instead, the producer sends messages 
+to an exchange. Exchanges are message routing agents, defined by the virtual host 
+within RabbitMQ. An exchange is responsible for routing the messages to different queues 
+with the help of header attributes, bindings, and routing keys.
+
+A **binding** is a "link" that you set up to bind a queue to an exchange.
+
+The **routing key** is a message attribute the exchange looks at when deciding how to 
+route the message to queues (depending on exchange type).
+
+> Exchanges, connections, and queues can be configured with parameters such as durable, 
+temporary, and auto delete upon creation. Durable exchanges survive server restarts and 
+last until they are explicitly deleted. Temporary exchanges exist until RabbitMQ is shut 
+down. Auto-deleted exchanges are removed once the last bound object is unbound from the 
+exchange.
+
+In RabbitMQ, there are four different types of exchanges that route the message differently 
+using different parameters and bindings setups. Clients can create their own exchanges or 
+use the predefined default exchanges which are created when the server starts for the first 
+time.
+
+### 
