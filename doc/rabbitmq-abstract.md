@@ -68,8 +68,14 @@ time.
 
 ### Standard RabbitMQ message flow
 
+<style>
+    .col6{
+        width: 50%; float:left;
+    }
+</style>
+
 <div style="width:100%" >
-    <div style="width: 50%; float:left;">
+    <div class="col6">
         <ol>
             <li>
                 The producer publishes a message to the exchange.
@@ -88,7 +94,7 @@ time.
             </li>
         </ol>
     </div>
-    <div style="width: 50%; float:left;">
+    <div  class="col6">
         <img src="img/exchanges-bidings-routing-keys.png" style="width: 100%; max-width: 460px;">
     </div>
 </div>
