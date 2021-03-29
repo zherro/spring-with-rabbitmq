@@ -52,4 +52,4 @@ Part of this project is based in the following docs:
 
 *courses*
 - [Free RabbitMQ Training Course](https://training.cloudamqp.com/course/1)
-- <a href="Getting_Started_with_RabbitMQ_and_CloudAMQP.pdf" target="_blank">Free Started with RabbitMQ Book</a>
+- <a href="https://github.com/zherro/spring-with-rabbitmq/blob/main/doc/Getting_Started_with_RabbitMQ_and_CloudAMQP.pdf" target="_blank">Free Started with RabbitMQ Book</a>
