@@ -43,3 +43,13 @@ Part of this project is based in the following docs:
 *cloudamqp.com/blog/*
 - [RabbitMQ for beginners - What is RabbitMQ?](https://www.cloudamqp.com/blog/part1-rabbitmq-for-beginners-what-is-rabbitmq.html)
 - [RabbitMQ Exchanges, routing keys and bindings](https://www.cloudamqp.com/blog/part4-rabbitmq-for-beginners-exchanges-routing-keys-bindings.html)
+
+*others*
+- [RabbitMQ no Spring Boot](https://emmanuelneri.com.br/2018/03/07/rabbitmq-no-spring-boot/)
+- [JMS vs AMQP](https://www.linkedin.com/pulse/jms-vs-amqp-eran-shaham/)
+- [Message Listeners and the Asynchronous Case](https://docs.spring.io/spring-amqp/reference/html/#async-listeners)
+- [RabbitMQ com Docker conhecendo o Admin](https://medium.com/xp-inc/rabbitmq-com-docker-conhecendo-o-admin-cc81f3f6ac3b)
+
+*courses*
+- [Free RabbitMQ Training Course](https://training.cloudamqp.com/course/1)
+- <a href="Getting_Started_with_RabbitMQ_and_CloudAMQP.pdf" target="_blank">Free Started with RabbitMQ Book</a>

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 
-@Component
+//@Component
 @JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id", scope = User.class)
 public class User implements Serializable {
 

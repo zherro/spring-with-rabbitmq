@@ -127,9 +127,9 @@ time.
 
 <img src="img/exchanges-topic-fanout-direct.png" style="width: 100%; max-width: 700px;">
 
-### Exchange types
+## Exchange types
 
-#### Direct Exchange
+### Direct Exchange
 
 A direct exchange delivers messages to queues based on a message routing key. 
 The routing key is a message attribute added to the message header by the producer. 
@@ -163,14 +163,14 @@ the binding key (pdf_log).
 
 > If the message routing key does not match any binding key, the message is discarded.
 
-#### Default exchange
+### Default exchange
 
 The default exchange is a pre-declared direct exchange with no name, usually referred 
 by an empty string. When you use default exchange, your message is delivered to the 
 queue with a name equal to the routing key of the message. Every queue is automatically 
 bound to the default exchange with a routing key which is the same as the queue name.
 
-#### Topic Exchange
+### Topic Exchange
 
 Topic exchanges route messages to queues based on wildcard matches between the routing 
 key and the routing pattern, which is specified by the queue binding. **Messages are 
@@ -233,7 +233,7 @@ The messages are routed to the queue berlin_agreements because the routing patte
 The message is also routed to the queue all_agreements because the routing key 
 (agreements.eu.berlin) matches the routing pattern (agreements.#).
 
-#### Fanout Exchange
+### Fanout Exchange
 
 A fanout exchange copies and routes a received message to all queues that are bound to 
 it regardless of routing keys or pattern matching as with direct and topic exchanges. 
@@ -263,7 +263,7 @@ A message is sent to the exchange sport_news. The message is routed to all queue
 (Queue A, Queue B, Queue C) because all queues are bound to the exchange. 
 Provided routing keys are ignored.
 
-#### Headers Exchange
+### Headers Exchange
 
 A headers exchange routes messages based on arguments containing headers and optional 
 values. Headers exchanges are very similar to topic exchanges, but route messages based 
@@ -323,8 +323,21 @@ in the message is irrelevant.
 - Exchange: Binding to Queue B with arguments (key = value): format = pdf, type = log, x-match = any
 - Exchange: Binding to Queue C with arguments (key = value): format = zip, type = report, x-match = all
 
-#### Dead Letter Exchange
+### Dead Letter Exchange
 
 If no matching queue can be found for the message, the message is silently dropped. 
 RabbitMQ provides an AMQP extension known as the "Dead Letter Exchange", which provides 
 the functionality to capture messages that are not deliverable.
+
+
+## Summary
+When you enable applications to initiate or react to events, then it is much easier to 
+scale because your architecture can be based on loosely coupled components. It is also 
+much easier to integrate those components if your messaging is based on open standard 
+APIs and protocols.
+
+The Spring Framework provides extensive support for integrating with messaging systems. 
+In Spring, you can go for simplified use of the JMS API using JmsTemplate to a complete 
+infrastructure to receive messages asynchronously.  The Spring Framework comes with Spring 
+AMQP to support the Advanced Message Queuing Protocol (AMQP)  so that you can start using 
+messaging systems like RabbitMQ and Kafka the Spring way with minimal effort.

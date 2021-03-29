@@ -17,21 +17,21 @@ public class ConsumerConfig {
     @Value("${spring.rabbitmq.routingkey}")
     private String routingKey;
 
-    @Bean
-    Queue queue() {
-        return new Queue(queue, true);
-    }
-    @Bean
-    Exchange myExchange() {
-        return ExchangeBuilder.fanoutExchange(exchange).durable(true).build();
-    }
-    @Bean
-    Binding binding() {
-        return BindingBuilder
-                .bind(queue())
-                .to(myExchange())
-                .with(routingKey)
-                .noargs();
-    }
+//    @Bean
+//    Queue queue() {
+//        return new Queue(queue, true);
+//    }
+//    @Bean
+//    Exchange myExchange() {
+//        return ExchangeBuilder.fanoutExchange(exchange).durable(true).build();
+//    }
+//    @Bean
+//    Binding binding() {
+//        return BindingBuilder
+//                .bind(queue())
+//                .to(myExchange())
+//                .with(routingKey)
+//                .noargs();
+//    }
 
 }
