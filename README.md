@@ -39,4 +39,7 @@ Use `http://localhost:8080` or `http://host-ip:8080` to send and consumer rabbit
 Part of this project is based in the following docs:
 
 - [Spring Boot Messaging with RabbitMQ](https://springframework.guru/spring-boot-messaging-with-rabbitmq/)
+
+*cloudamqp.com/blog/*
+- [RabbitMQ for beginners - What is RabbitMQ?](https://www.cloudamqp.com/blog/part1-rabbitmq-for-beginners-what-is-rabbitmq.html)
 - [RabbitMQ Exchanges, routing keys and bindings](https://www.cloudamqp.com/blog/part4-rabbitmq-for-beginners-exchanges-routing-keys-bindings.html)
